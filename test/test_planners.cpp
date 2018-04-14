@@ -7,6 +7,8 @@
 #include "random_planner.h"
 #include "optimal_planner.h"
 
+using discrete_planner::Pose;
+
 std::deque<Pose> testPlanner(const std::shared_ptr<discrete_planner::Planner> &planner,
                              const std::vector<std::vector<bool>>& world_state,
                              const Pose& start_pose, const Pose& goal_pose,
