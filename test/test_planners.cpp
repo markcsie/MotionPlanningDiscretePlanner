@@ -86,7 +86,7 @@ int main()
   has_solution_tests.push_back(true);
 
   // test planners
-  std::shared_ptr<discrete_planner::Planner> random_planner = std::make_shared<discrete_planner::RandomPlanner>(discrete_planner::RandomPlanner(100, 0));
+  std::shared_ptr<discrete_planner::Planner> random_planner = std::make_shared<discrete_planner::RandomPlanner>(discrete_planner::RandomPlanner(400, 0));
   std::shared_ptr<discrete_planner::Planner> optimal_planner = std::make_shared<discrete_planner::OptimalPlanner>(discrete_planner::OptimalPlanner());
   for (size_t i = 0; i < worlds_tests.size(); ++i)
   {
